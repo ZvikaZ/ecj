@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.gmu.cs</groupId>
     <artifactId>ecj</artifactId>
-    <version>27</version>
+    <version>27.1-zvika-3</version>
     <packaging>jar</packaging>
 
     <profiles>
@@ -12,10 +12,11 @@
 	     it's expensive). -->
 	<id>UnitTests</id>
 	<activation>
-	  <activeByDefault>true</activeByDefault>
+<!--Zvika		<activeByDefault>true</activeByDefault>-->
+		<activeByDefault>false</activeByDefault>
 	</activation>
 	<properties>
-	  <tests.excludedGroups>ec.test.SystemTest</tests.excludedGroups>
+<!--Zvika	  <tests.excludedGroups>ec.test.SystemTest</tests.excludedGroups>-->
 	</properties>
       </profile>
 	  
@@ -36,7 +37,7 @@
 	      <configuration>
 		<!-- We only run the SystemTest group (and no other
 		     tests). -->
-		<groups>ec.test.SystemTest</groups>
+<!--Zvika		<groups>ec.test.SystemTest</groups>-->
 	      </configuration>
 	    </plugin>
 	  </plugins>
