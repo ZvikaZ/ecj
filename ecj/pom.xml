@@ -45,12 +45,13 @@
       </profile>
     </profiles>
 
-    <repositories>
+    <!-- Zvika. According to https://gist.github.com/jitpack-io/f928a858aa5da08ad9d9662f982da983#file-jitpack-yml, replaced that with a jitpack.yml file -->
+    <!--repositories>
       <repository>
 	<id>local-repo</id>
 	<url>file:///${project.basedir}/local-repo</url>
       </repository>
-    </repositories>
+    </repositories-->
     
     <dependencies>
         <dependency>
