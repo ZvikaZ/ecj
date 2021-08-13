@@ -45,13 +45,22 @@
       </profile>
     </profiles>
 
-    <!-- Zvika. According to https://gist.github.com/jitpack-io/f928a858aa5da08ad9d9662f982da983#file-jitpack-yml, replaced that with a jitpack.yml file -->
+    <!-- Zvika. According to https://gist.github.com/jitpack-io/f928a858aa5da08ad9d9662f982da983#file-jitpack-yml, replaced that with a jitpack.yml file in its own repo-->
     <!--repositories>
       <repository>
 	<id>local-repo</id>
 	<url>file:///${project.basedir}/local-repo</url>
       </repository>
     </repositories-->
+    
+	<!-- Zvika - required for pshecj from github -->
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
     
     <dependencies>
         <dependency>
@@ -87,12 +96,19 @@
 	  <version>2.11.0</version>
 	  <scope>test</scope>
 	</dependency>
+	
 	<dependency>
-	  <groupId>pshecj</groupId>
-	  <artifactId>pshecj</artifactId>
-	  <version>1</version>
+		<!-- Zvika - build failed when it was local, moved to its own repo.  groupId>pshecj</groupId-->
+	    <groupId>com.github.ZvikaZ</groupId>
+	    <artifactId>pshecj</artifactId>
+	    <version>ca494bf3f6</version>
 	</dependency>
+
+
     </dependencies>
+	
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
