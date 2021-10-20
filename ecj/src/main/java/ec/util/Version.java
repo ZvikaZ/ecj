@@ -26,7 +26,7 @@ import java.util.*;
 public class Version
     {
     public static final String name = "ECJ";
-    public static final String version = "27.1-zvika-3";
+    public static final String version = "27.1-zvika-5";
     public static final String copyright = "2019";
     public static final String author = "Sean Luke";
     public static final String contributors = "E. Scott, L. Panait, G. Balan, S. Paus, Z. Skolicki,";
